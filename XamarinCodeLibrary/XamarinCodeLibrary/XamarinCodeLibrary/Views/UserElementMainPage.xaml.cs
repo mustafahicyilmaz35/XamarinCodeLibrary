@@ -16,13 +16,29 @@ using XamarinCodeLibrary.Views.PageViews.ModalPages;
 using XamarinCodeLibrary.Views.PageViews.NavigationPages;
 using XamarinCodeLibrary.Views.PageViews.TabbedPages;
 using XamarinCodeLibrary.Views.UserControls;
+using XamarinCodeLibrary.Views.UserControls.BoxViews;
 using XamarinCodeLibrary.Views.UserControls.ButtonViews;
 using XamarinCodeLibrary.Views.UserControls.CarouselViews;
 using XamarinCodeLibrary.Views.UserControls.CheckBoxes;
 using XamarinCodeLibrary.Views.UserControls.CollectionViews;
 using XamarinCodeLibrary.Views.UserControls.DatePickers;
 using XamarinCodeLibrary.Views.UserControls.Frames;
+using XamarinCodeLibrary.Views.UserControls.ImageViews;
 using XamarinCodeLibrary.Views.UserControls.ListViews;
+using XamarinCodeLibrary.Views.UserControls.MapViews;
+using XamarinCodeLibrary.Views.UserControls.MediaElements;
+using XamarinCodeLibrary.Views.UserControls.Pickers;
+using XamarinCodeLibrary.Views.UserControls.ProgressBar;
+using XamarinCodeLibrary.Views.UserControls.RefreshViews;
+using XamarinCodeLibrary.Views.UserControls.ScrolViewSample;
+using XamarinCodeLibrary.Views.UserControls.SearchBarViews;
+using XamarinCodeLibrary.Views.UserControls.Sliders;
+using XamarinCodeLibrary.Views.UserControls.Steppers;
+using XamarinCodeLibrary.Views.UserControls.SwipeViews;
+using XamarinCodeLibrary.Views.UserControls.Switchs;
+using XamarinCodeLibrary.Views.UserControls.TableViews;
+using XamarinCodeLibrary.Views.UserControls.TextDemos;
+using XamarinCodeLibrary.Views.UserControls.WebViews;
 
 namespace XamarinCodeLibrary.Views
 {
@@ -77,15 +93,15 @@ namespace XamarinCodeLibrary.Views
                 case "Flex Layout":
                     await Navigation.PushAsync(new FlexLayoutSampleView());
                     break;
-                //case "Image":
-                //    await Navigation.PushAsync(new ImageSampleView());
-                //    break;
-                //case "BoxView":
-                //    await Navigation.PushAsync(new BoxViewSampleView());
-                //    break;
-                //case "WebView":
-                //    await Navigation.PushAsync(new WebViewSampleView());
-                //    break;
+                case "Image":
+                    await Navigation.PushAsync(new ImageSampleView()); 
+                    break;
+                case "BoxView":
+                    await Navigation.PushAsync(new BoxViewSampleView()); 
+                    break;
+                case "WebView":
+                    await Navigation.PushAsync(new WebViewSampleView()); 
+                    break;
                 //case "OpenGLView":
                 //    await Navigation.PushAsync(new OpenGLSampleView()); //Block
                 //    break;
@@ -98,42 +114,42 @@ namespace XamarinCodeLibrary.Views
                 case "CheckBox":
                     await Navigation.PushAsync(new CheckBoxSampleView());
                     break;
-               /* case "Slider":
-                    await Navigation.PushAsync(new SliderSampleView());
+                case "Slider":
+                    await Navigation.PushAsync(new SliderSampleView()); 
                     break;
                 case "Stepper":
-                    await Navigation.PushAsync(new StepperSampleView());
+                    await Navigation.PushAsync(new StepperSampleView()); 
                     break;
                 case "Map":
-                    await Navigation.PushAsync(new MapSampleViews());
+                    await Navigation.PushAsync(new MapSampleViews()); //kontrol
                     break;
                 case "Media Element":
                     await Navigation.PushAsync(new MediaSampleView());
                     break;
                 case "RefreshView":
-                    await Navigation.PushAsync(new RefreshViewSample());
+                    await Navigation.PushAsync(new RefreshViewSample()); //kontrol
                     break;
                 case "SearchBar":
-                    await Navigation.PushAsync(new SearchBarSampleView());
+                    await Navigation.PushAsync(new SearchBarSampleView()); //kontrol
                     break;
                 case "SwipeView":
-                    await Navigation.PushAsync(new SwipeViewSample());
+                    await Navigation.PushAsync(new SwipeViewSample()); //kontrol //block
                     break;
                 case "Switch":
                     await Navigation.PushAsync(new SwitchSampleView());
-                    break;*/
+                    break;
                 case "Date Picker":
                     await Navigation.PushAsync(new DatePickerSampleView());
                     break;
-                //case "Text Demos":
-                //    await Navigation.PushAsync(new TextMainPage());
-                //    break;
+                case "Text Demos":
+                    await Navigation.PushAsync(new TextMainPage());
+                    break;
                 case "Activity Indicator":
                     await Navigation.PushAsync(new ActivityIndicatorSampleView());
                     break;
-                //case "ProgressBar":
-                //    await Navigation.PushAsync(new ProgressBarSampleView());
-                //    break;
+                case "ProgressBar":
+                    await Navigation.PushAsync(new ProgressBarSampleView());
+                    break;
                 case "CarouselView":
                     await Navigation.PushAsync(new CarouselViewSample());
                     break;
@@ -143,21 +159,21 @@ namespace XamarinCodeLibrary.Views
                 //case "IndicatorView":
                 //    await Navigation.PushAsync(new IndicatorViewSample()); //Block
                 //    break;
-                case "ListView":
+                //case "ListView":
                     await Navigation.PushAsync(new ListViewSampleView());
                     break;
-                //case "Picker":
-                //    await Navigation.PushAsync(new PickerViewSample());
-                //    break;
-                //case "TableView":
-                //    await Navigation.PushAsync(new TableViewSample());
-                //    break;
+                case "Picker":
+                    await Navigation.PushAsync(new PickerViewSample());
+                    break;
+                case "TableView":
+                    await Navigation.PushAsync(new TableViewSample());
+                    break;
                 case "Frame":
                     await Navigation.PushAsync(new FrameSample());
                     break;
-                //case "ScrollView":
-                //    await Navigation.PushAsync(new ScrolViewSample());
-                //    break;
+                case "ScrollView":
+                    await Navigation.PushAsync(new ScrolViewSample());
+                    break;
             }
         }
     }

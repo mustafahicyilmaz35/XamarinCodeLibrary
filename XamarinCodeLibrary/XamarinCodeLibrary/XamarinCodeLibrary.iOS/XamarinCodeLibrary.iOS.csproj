@@ -139,4 +139,25 @@
   <ItemGroup>
     <BundleResource Include="Resources\first.png" />
   </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\disneylnd6.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\disney.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\disneylnd1.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\disneylnd2.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\disneylnd3.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\disneylnd4.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\disneylnd5.jpg" />
+  </ItemGroup>
 </Project>
