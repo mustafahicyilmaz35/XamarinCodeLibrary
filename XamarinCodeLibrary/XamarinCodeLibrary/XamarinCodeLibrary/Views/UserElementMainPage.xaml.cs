@@ -24,9 +24,11 @@ using XamarinCodeLibrary.Views.UserControls.CollectionViews;
 using XamarinCodeLibrary.Views.UserControls.DatePickers;
 using XamarinCodeLibrary.Views.UserControls.Frames;
 using XamarinCodeLibrary.Views.UserControls.ImageViews;
+using XamarinCodeLibrary.Views.UserControls.IndicatorViews;
 using XamarinCodeLibrary.Views.UserControls.ListViews;
 using XamarinCodeLibrary.Views.UserControls.MapViews;
 using XamarinCodeLibrary.Views.UserControls.MediaElements;
+using XamarinCodeLibrary.Views.UserControls.OpenGLs;
 using XamarinCodeLibrary.Views.UserControls.Pickers;
 using XamarinCodeLibrary.Views.UserControls.ProgressBar;
 using XamarinCodeLibrary.Views.UserControls.RefreshViews;
@@ -102,9 +104,9 @@ namespace XamarinCodeLibrary.Views
                 case "WebView":
                     await Navigation.PushAsync(new WebViewSampleView()); 
                     break;
-                //case "OpenGLView":
-                //    await Navigation.PushAsync(new OpenGLSampleView()); //Block
-                //    break;
+                case "OpenGLView":
+                    await Navigation.PushAsync(new OpenGLSampleView()); //Block
+                    break;
                 case "Button":
                     await Navigation.PushAsync(new ButtonViewSample());
                     break;
@@ -120,7 +122,7 @@ namespace XamarinCodeLibrary.Views
                 case "Stepper":
                     await Navigation.PushAsync(new StepperSampleView()); 
                     break;
-                case "Map":
+                case "!Map":
                     await Navigation.PushAsync(new MapSampleViews()); //kontrol
                     break;
                 case "Media Element":
@@ -156,10 +158,10 @@ namespace XamarinCodeLibrary.Views
                 case "CollectionView":
                     await Navigation.PushAsync(new CollectionSampleView());
                     break;
-                //case "IndicatorView":
-                //    await Navigation.PushAsync(new IndicatorViewSample()); //Block
-                //    break;
-                //case "ListView":
+                case "IndicatorView":
+                    await Navigation.PushAsync(new IndicatorViewSample()); //Block
+                    break;
+                case "ListView":
                     await Navigation.PushAsync(new ListViewSampleView());
                     break;
                 case "Picker":

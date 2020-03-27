@@ -40,6 +40,15 @@ namespace XamarinCodeLibrary.Views
                 case "Barometer":
                     Navigation.PushAsync(new BarometerPage());
                     break;
+                case "Battery":
+                    Navigation.PushAsync(new BatteryPage());
+                    break;
+                case "Clipboard":
+                    Navigation.PushAsync(new ClipBoardPage());  
+                    break;
+                case "Connectivity":
+                    Navigation.PushAsync(new ConnectivityPage());  
+                    break;
             }
 
         }
