@@ -7,6 +7,8 @@ using System.Threading.Tasks;
 using Xamarin.Forms;
 using Xamarin.Forms.Xaml;
 using XamarinCodeLibrary.CommonServices.EssentialServices;
+using XamarinCodeLibrary.CommonServices.EssentialServices.ColorconvertesService;
+using XamarinCodeLibrary.CommonServices.EssentialServices.Compass;
 using XamarinCodeLibrary.Models;
 
 namespace XamarinCodeLibrary.Views
@@ -48,6 +50,12 @@ namespace XamarinCodeLibrary.Views
                     break;
                 case "Connectivity":
                     Navigation.PushAsync(new ConnectivityPage());  
+                    break;
+                case "Color Converters":
+                    Navigation.PushAsync(new ColorconverterPage()); // us 2.3
+                    break;
+                case "Compass":
+                    Navigation.PushAsync(new CompassPage()); // us 2.3
                     break;
             }
 
