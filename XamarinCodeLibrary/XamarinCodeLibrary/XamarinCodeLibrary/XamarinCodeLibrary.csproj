@@ -88,13 +88,13 @@
     <EmbeddedResource Update="CommonServices\EssentialServices\LauncherPage.xaml">
       <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
     </EmbeddedResource>
-    <EmbeddedResource Update="CommonServices\FlashLightPage.xaml">
+    <EmbeddedResource Update="CommonServices\EssentialServices\FlashLightPage.xaml">
       <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
     </EmbeddedResource>
-    <EmbeddedResource Update="CommonServices\GeoLocationPage.xaml">
+    <EmbeddedResource Update="CommonServices\EssentialServices\GeoLocationPage.xaml">
       <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
     </EmbeddedResource>
-    <EmbeddedResource Update="CommonServices\MagnometerPage.xaml">
+    <EmbeddedResource Update="CommonServices\EssentialServices\MagnometerPage.xaml">
       <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
     </EmbeddedResource>
     <EmbeddedResource Update="CommonServices\PlatformServices\PlatformServicesMainPage.xaml">
