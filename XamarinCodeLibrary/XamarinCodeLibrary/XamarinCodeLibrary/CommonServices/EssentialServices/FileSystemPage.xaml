@@ -1,0 +1,28 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             mc:Ignorable="d"
+             x:Class="XamarinCodeLibrary.CommonServices.EssentialServices.FileSystemPage">
+    <ContentPage.Content>
+        <StackLayout>
+            <Button Clicked="ButtonTemplate_Clicked" Text="Load Template File" />
+            <Label x:Name="LabelOutput" />
+
+            <StackLayout Orientation="Horizontal" Spacing="6">
+                <Button
+                    Clicked="Load"
+                    HorizontalOptions="FillAndExpand"
+                    Text="Load" />
+                <Button
+                    Clicked="Save"
+                    HorizontalOptions="FillAndExpand"
+                    Text="Save" />
+            </StackLayout>
+
+            <Label Text="Edit the contents of the file:" />
+            <Editor x:Name="CurrentContents" VerticalOptions="FillAndExpand" />
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

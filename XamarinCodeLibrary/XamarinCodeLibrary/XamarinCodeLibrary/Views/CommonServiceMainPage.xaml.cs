@@ -1,15 +1,12 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
+﻿
 using Xamarin.Forms;
 using Xamarin.Forms.Xaml;
+using XamarinCodeLibrary.CommonServices;
 using XamarinCodeLibrary.CommonServices.EssentialServices;
 using XamarinCodeLibrary.CommonServices.EssentialServices.ColorconvertesService;
 using XamarinCodeLibrary.CommonServices.EssentialServices.Compass;
 using XamarinCodeLibrary.Models;
+using XamarinCodeLibrary.Views.UserControls.TextDemos;
 
 namespace XamarinCodeLibrary.Views
 {
@@ -46,16 +43,49 @@ namespace XamarinCodeLibrary.Views
                     Navigation.PushAsync(new BatteryPage());
                     break;
                 case "Clipboard":
-                    Navigation.PushAsync(new ClipBoardPage());  
+                    Navigation.PushAsync(new ClipBoardPage());
                     break;
                 case "Connectivity":
-                    Navigation.PushAsync(new ConnectivityPage());  
+                    Navigation.PushAsync(new ConnectivityPage());
                     break;
                 case "Color Converters":
                     Navigation.PushAsync(new ColorconverterPage()); // us 2.3
                     break;
                 case "Compass":
                     Navigation.PushAsync(new CompassPage()); // us 2.3
+                    break;
+                case "Detect Shake":
+                    Navigation.PushAsync(new LoginPageXaml()); // us 2.3
+                    break;
+                case "Device Display Information":
+                    Navigation.PushAsync(new DeviceDisplayInfo()); // us 2.3
+                    break;
+                case "Device Information":
+                    Navigation.PushAsync(new DeviceInfo()); // us 2.3
+                    break;
+                case "Email":
+                    Navigation.PushAsync(new EmailPage()); // us 2.3
+                    break;
+                case "File System Helpers":
+                    Navigation.PushAsync(new FileSystemPage()); // us 2.4.1
+                    break;
+                case "FlashLights":
+                    Navigation.PushAsync(new FlashLightPage()); // us 2.4.2 //block // Emulatorde catch bloğuna giriyor, gerçek device da test edilecek.
+                    break;
+                case "Geolocation":
+                    Navigation.PushAsync(new GeoLocationPage()); // us 2.4.3
+                    break;
+                case "Geocoding":
+                    Navigation.PushAsync(new GeoCodingEssentialPage()); // us 2.4.4
+                    break;
+                case "Launcher":
+                    Navigation.PushAsync(new LauncherPage()); // us 2.4.5
+                    break;
+                case "Gyroscope":
+                    Navigation.PushAsync(new GyroscopePage()); // us 2.4.6
+                    break;
+                case "Magnetometer":
+                    Navigation.PushAsync(new MagnometerPage()); // us 2.4.7
                     break;
             }
 
