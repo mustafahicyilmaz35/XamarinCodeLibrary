@@ -42,7 +42,7 @@ namespace XamarinCodeLibrary.ViewModels.EssentialViewModels
                 new CommonServiceModel{ServiceName = "Maps"},
                 new CommonServiceModel{ServiceName = "Open Browser"},
                 new CommonServiceModel{ServiceName = "Orientation Sensor"},
-                new CommonServiceModel{ServiceName = "Permissions"},
+                //new CommonServiceModel{ServiceName = "Permissions"},
                 new CommonServiceModel{ServiceName = "Phone Dialer"},
                 new CommonServiceModel{ServiceName = "Platform Extensions"},
                 new CommonServiceModel{ServiceName = "Secure Storage"},

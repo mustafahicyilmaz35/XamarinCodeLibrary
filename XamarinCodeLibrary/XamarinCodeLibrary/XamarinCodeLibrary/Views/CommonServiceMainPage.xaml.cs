@@ -87,6 +87,18 @@ namespace XamarinCodeLibrary.Views
                 case "Magnetometer":
                     Navigation.PushAsync(new MagnometerPage()); // us 2.4.7
                     break;
+                case "Main Thread":
+                    Navigation.PushAsync(new MainThreadPage()); // us 2.5.1
+                    break;
+                case "Maps":
+                    Navigation.PushAsync(new MapPage()); // us 2.5.2
+                    break;
+                case "Open Browser":
+                    Navigation.PushAsync(new OpenBrowserPage()); // us 2.5.3
+                    break;
+                case "Orientation Sensor":
+                    Navigation.PushAsync(new OrientationSensorPage()); // us 2.5.4
+                    break;
             }
 
         }
