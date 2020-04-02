@@ -1,0 +1,17 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             mc:Ignorable="d"
+             x:Class="XamarinCodeLibrary.CommonServices.EssentialServices.SharedPreferencePage">
+    <ContentPage.Content>
+        <StackLayout>
+            <Entry x:Name="EntryName" Placeholder="İsim Girin:" VerticalOptions="CenterAndExpand" HorizontalOptions="CenterAndExpand"/>
+            
+            <Label x:Name="LabelName" VerticalOptions="CenterAndExpand" HorizontalOptions="CenterAndExpand"/>
+            <Button Text="Kaydet" Clicked="Button_OnClicked"></Button>
+            <Button Text="Sil" Clicked="DeletedButton"></Button>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

@@ -99,6 +99,17 @@ namespace XamarinCodeLibrary.Views
                 case "Orientation Sensor":
                     Navigation.PushAsync(new OrientationSensorPage()); // us 2.5.4
                     break;
+                case "Phone Dialer":
+                    Navigation.PushAsync(new PhoneDialerPage()); // us 2.5.5
+                    break;
+                //Platform extension block us 2.5.6
+                case "Shared Preferences":
+                    Navigation.PushAsync(new SharedPreferencePage()); // us 2.5.6
+                    break;
+                case "Share":
+                    Navigation.PushAsync(new SharePage()); // us 2.5.7
+                    break;
+
             }
 
         }
