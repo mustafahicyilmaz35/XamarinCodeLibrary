@@ -46,7 +46,7 @@ namespace XamarinCodeLibrary.ViewModels.EssentialViewModels
                 new CommonServiceModel{ServiceName = "Phone Dialer"},
                 //new CommonServiceModel{ServiceName = "Platform Extensions"}, block
                 new CommonServiceModel{ServiceName = "Shared Preferences"},
-                new CommonServiceModel{ServiceName = "Secure Storage"},// bir sonraki gün...
+                new CommonServiceModel{ServiceName = "Secure Storage"},
                 new CommonServiceModel{ServiceName = "Share"},
                 new CommonServiceModel{ServiceName = "SMS"},
                 new CommonServiceModel{ServiceName = "Text-to-Speech"},

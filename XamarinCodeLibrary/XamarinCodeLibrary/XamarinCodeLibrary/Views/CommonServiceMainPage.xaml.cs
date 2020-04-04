@@ -109,6 +109,24 @@ namespace XamarinCodeLibrary.Views
                 case "Share":
                     Navigation.PushAsync(new SharePage()); // us 2.5.7
                     break;
+                case "Secure Storage":
+                    Navigation.PushAsync(new ColorconverterPage()); // us 2.6.1
+                    break;
+                case "SMS":
+                    Navigation.PushAsync(new SmsPage()); // us 2.6.2
+                    break;
+                case "Text-to-Speech":
+                    Navigation.PushAsync(new TextToSpeechPage()); // us 2.6.3
+                    break;
+                case "Unit Converters":
+                    Navigation.PushAsync(new UnitConverterPage()); // us 2.6.4
+                    break;
+                case "Version Tracking":
+                    Navigation.PushAsync(new VersionTrackingPage()); // us 2.6.5
+                    break;
+                case "Vibrate":
+                    Navigation.PushAsync(new VibratePage()); // us 2.6.6
+                    break;
 
             }
 
