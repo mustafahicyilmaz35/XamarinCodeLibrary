@@ -6,6 +6,7 @@ using System.Threading.Tasks;
 
 using Xamarin.Forms;
 using Xamarin.Forms.Xaml;
+using XamarinCodeLibrary.Views.UserControls.ListViews.Basic;
 
 namespace XamarinCodeLibrary.Views.UserControls.ListViews
 {
@@ -15,6 +16,16 @@ namespace XamarinCodeLibrary.Views.UserControls.ListViews
         public ListViewSampleView()
         {
             InitializeComponent();
+        }
+
+        private async void Button_OnClicked(object sender, EventArgs e)
+        {
+            await Navigation.PushAsync(new BasicList());
+        }
+
+        private async void Context_Button_Clicked(object sender, EventArgs e)
+        {
+            await Navigation.PushAsync(new ContextAction.ContextAction());
         }
     }
 }

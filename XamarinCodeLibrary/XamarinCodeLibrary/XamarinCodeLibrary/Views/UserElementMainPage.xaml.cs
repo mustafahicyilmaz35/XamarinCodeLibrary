@@ -9,6 +9,7 @@ using Xamarin.Forms;
 using Xamarin.Forms.Xaml;
 using XamarinCodeLibrary.Models;
 using XamarinCodeLibrary.Views.LayoutViews;
+using XamarinCodeLibrary.Views.LayoutViews.ControlViews;
 using XamarinCodeLibrary.Views.PageViews.CarouselPages;
 using XamarinCodeLibrary.Views.PageViews.ContentPages;
 using XamarinCodeLibrary.Views.PageViews.MasterDetailPages;
@@ -175,6 +176,12 @@ namespace XamarinCodeLibrary.Views
                     break;
                 case "ScrollView":
                     await Navigation.PushAsync(new ScrolViewSample());
+                    break;
+                case "!SwipeView":
+                    await Navigation.PushAsync(new SwipeViewSample());
+                    break;
+                case "Content View":
+                    await Navigation.PushAsync(new ControlViewPage());
                     break;
             }
         }

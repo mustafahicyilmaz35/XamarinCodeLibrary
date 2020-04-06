@@ -7,9 +7,8 @@
              x:Class="XamarinCodeLibrary.Views.UserControls.ListViews.ListViewSampleView">
     <ContentPage.Content>
         <StackLayout>
-            <Label Text="Welcome to Xamarin.Forms!"
-                VerticalOptions="CenterAndExpand" 
-                HorizontalOptions="CenterAndExpand" />
+            <Button Text="Basic ListView" Clicked="Button_OnClicked"/>
+            <Button Text="Context Actions" Clicked="Context_Button_Clicked"/>
         </StackLayout>
     </ContentPage.Content>
 </ContentPage>

@@ -43,6 +43,7 @@ namespace XamarinCodeLibrary.ViewModels
                 new UIModel{UIType = "Layout", Name = "Relative Layout"},
                 new UIModel{UIType = "Layout", Name = "Absolute Layout"},
                 new UIModel{UIType = "Layout", Name = "Grid"},
+                new UIModel{UIType = "Layout", Name = "Content View"},
                 new UIModel{UIType = "Layout", Name = "Flex Layout"},
                 new UIModel{UIType = "Page", Name = "Content Page"},
                 new UIModel{UIType = "Page", Name = "Master Detail Page"},
