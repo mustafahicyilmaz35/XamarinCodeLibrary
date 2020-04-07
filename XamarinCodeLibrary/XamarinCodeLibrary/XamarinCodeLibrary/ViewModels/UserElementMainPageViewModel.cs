@@ -78,6 +78,7 @@ namespace XamarinCodeLibrary.ViewModels
                 new UIModel{UIType = "View", Name = "TableView"},
                 new UIModel{UIType = "View", Name = "Frame"},
                 new UIModel{UIType = "View", Name = "ScrollView"},
+                new UIModel{UIType = "View", Name = "Time Picker"},
 
 
             };

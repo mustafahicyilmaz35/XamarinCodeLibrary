@@ -41,6 +41,7 @@ using XamarinCodeLibrary.Views.UserControls.SwipeViews;
 using XamarinCodeLibrary.Views.UserControls.Switchs;
 using XamarinCodeLibrary.Views.UserControls.TableViews;
 using XamarinCodeLibrary.Views.UserControls.TextDemos;
+using XamarinCodeLibrary.Views.UserControls.TimePickers;
 using XamarinCodeLibrary.Views.UserControls.WebViews;
 
 namespace XamarinCodeLibrary.Views
@@ -182,6 +183,9 @@ namespace XamarinCodeLibrary.Views
                     break;
                 case "Content View":
                     await Navigation.PushAsync(new ControlViewPage());
+                    break;
+                case "Time Picker":
+                    await Navigation.PushAsync(new TimePickerPage());
                     break;
             }
         }

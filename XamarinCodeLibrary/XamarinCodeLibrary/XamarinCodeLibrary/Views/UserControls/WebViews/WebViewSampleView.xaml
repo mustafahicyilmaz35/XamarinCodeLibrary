@@ -8,6 +8,7 @@
     <ContentPage.Content>
         <StackLayout>
             <WebView Source="https://www.microsoft.com/tr-tr/" WidthRequest="1000" HeightRequest="1000"></WebView>
+            <Button Text ="Html Sayfasına Git" Clicked="Button_OnClicked"/>
         </StackLayout>
     </ContentPage.Content>
 </ContentPage>

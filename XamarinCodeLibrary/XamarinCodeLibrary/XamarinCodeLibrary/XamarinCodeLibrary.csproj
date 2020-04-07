@@ -31,6 +31,9 @@
     <Compile Update="Views\UserControls\Sliders\HslColorSliderPage.xaml.cs">
       <DependentUpon>HslColorSliderPage.xaml</DependentUpon>
     </Compile>
+    <Compile Update="Views\UserControls\TimePickers\TimePickerPage.xaml.cs">
+      <DependentUpon>TimePickerPage.xaml</DependentUpon>
+    </Compile>
   </ItemGroup>
 
   <ItemGroup>
@@ -398,6 +401,9 @@
       <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
     </EmbeddedResource>
     <EmbeddedResource Update="Views\UserControls\TextDemos\TextMainPage.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+    </EmbeddedResource>
+    <EmbeddedResource Update="Views\UserControls\TimePickers\TimePickerPage.xaml">
       <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
     </EmbeddedResource>
     <EmbeddedResource Update="Views\UserControls\WebViews\WebViewSampleView.xaml">
