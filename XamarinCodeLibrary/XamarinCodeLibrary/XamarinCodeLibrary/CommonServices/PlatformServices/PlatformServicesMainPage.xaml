@@ -3,13 +3,26 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              xmlns:d="http://xamarin.com/schemas/2014/forms/design"
              xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             xmlns:viewModel="clr-namespace:XamarinCodeLibrary.CommonServices.PlatformServices;assembly=XamarinCodeLibrary"
              mc:Ignorable="d"
              x:Class="XamarinCodeLibrary.CommonServices.PlatformServices.PlatformServicesMainPage">
+
+    <ContentPage.BindingContext>
+        <viewModel:PlatformServiceViewModel/>
+    </ContentPage.BindingContext>
     <ContentPage.Content>
         <StackLayout>
-            <Label Text="Platform Services Main Page"
-                VerticalOptions="CenterAndExpand" 
-                HorizontalOptions="CenterAndExpand" />
+            <ListView ItemSelected="ListView_OnItemSelected" ItemsSource="{Binding Services}">
+                <ListView.ItemTemplate>
+                    <DataTemplate>
+                        <ViewCell>
+                            <StackLayout>
+                                <Label Text="{Binding Name}"/>
+                            </StackLayout>
+                        </ViewCell>
+                    </DataTemplate>
+                </ListView.ItemTemplate>
+            </ListView>
         </StackLayout>
     </ContentPage.Content>
 </ContentPage>

@@ -16,5 +16,20 @@ namespace XamarinCodeLibrary.CommonServices.PlatformServices
         {
             InitializeComponent();
         }
+
+        private void ListView_OnItemSelected(object sender, SelectedItemChangedEventArgs e)
+        {
+
+            if (e.SelectedItem == null) return;
+
+            if (sender is ListView lv) lv.SelectedItem = null;
+
+            switch ((e.SelectedItem as PlatformServiceModel)?.Name)
+            {
+                case "WhatsApp":
+                    Navigation.PushAsync(new WhatsappPage());
+                    break;
+            }
+        }
     }
 }
